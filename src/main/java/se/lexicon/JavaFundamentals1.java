@@ -105,7 +105,6 @@ public class JavaFundamentals1 {
         System.out.println(firstName + " " + lastName);
 
 
-
         Person erik = new Person(); // object 1
         erik.firstName = "Erik";
         erik.lastName = "Svensson";
@@ -121,7 +120,37 @@ public class JavaFundamentals1 {
         System.out.println(anna.fullName());
 
 
+        JavaFundamentals1.displayMenu();
 
     }
+
+
+    // implement a logic that is responsible to display a menu in the console.
+    public static void displayMenu() {
+        System.out.println("## Calculator App ##");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("0. Exit");
+    }
+
+    public static int addition(int n1, int n2) {
+        return n1 + n2;
+    }
+
+    // declare a static method to convert Celsius to Fahrenheit
+    private static double celsiusToFahrenheit(double celsius) {
+        // Fahrenheit= (Celsius * 9 / 5) + 32;
+        return (celsius * 9 / 5) + 32;
+    }
+
+    public static boolean login(String username, String password){
+        // validate  the params
+        // hash password
+        // compare username
+        // compare password
+        // and more logics as needed...
+        return true;
+    }
+
 
 }
